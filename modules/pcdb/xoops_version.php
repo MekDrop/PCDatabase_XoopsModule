@@ -7,7 +7,7 @@ $modversion['author'] = "";
 $modversion['credits'] = "MekDrop";
 $modversion['help'] = "";
 $modversion['license'] = "GPL see LICENSE";
-$modversion['official'] = 1;
+$modversion['official'] = 0;
 $modversion['image'] = "images/logo.png";
 $modversion['dirname'] = "pcdb";
 
