@@ -10,6 +10,3 @@ $fields = array("id", "date", 'text', "@user");
 $nonew = true;
 $orderby = "ORDER BY ID DESC";
 include "-show.php";
-
-
-?>

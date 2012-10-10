@@ -1,12 +1,6 @@
 <?php
 
-include "../../../mainfile.php";
-if (!$xoopsUser) {
-    redirect_header(XOOPS_URL."/user.php", 3, _AD_NORIGHT);
-}
-
-include XOOPS_ROOT_PATH."/include/cp_functions.php";
-include_once '../log.php';
+include '../include/admin_common.php';
 
 if (!isset($_POST['redirect'])) {
 	redirect_header(XOOPS_URL."/user.php", 3, _AD_NORIGHT);
@@ -33,5 +27,3 @@ if ($xoopsDB->getAffectedRows()>0) {
 } else {
 	redirect_header(XOOPS_URL."/modules/pcdb/$infix/index.php?op=$type&opt=$operation&id=$pid", 3, _MI_PCDB_CANTCOMPLETE);
 }
-
-?>

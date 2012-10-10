@@ -1,4 +1,4 @@
-<?
+<?php
 if (!isset($op)) {
 	redirect_header(XOOPS_URL."/user.php", 3, _AD_NORIGHT);
 }
@@ -17,5 +17,3 @@ if (isset($_REQUEST['id'])) {
 } else {
 	redirect_header(XOOPS_URL."/user.php", 3, _AD_NORIGHT);
 }
-
-?>

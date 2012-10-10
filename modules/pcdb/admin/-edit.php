@@ -1,4 +1,4 @@
-<?
+<?php
 
 include XOOPS_ROOT_PATH.'/class/xoopsformloader.php';
 
@@ -26,7 +26,7 @@ foreach ($fields as $name => $type) {
 			if ($value!='') {
 				$value = strtotime($value);
 			}
-			$form->addElement(new XoopsFormCalendar($caption, $name, $value),$required);
+			$form->addElement(new XoopsFormTextDateSelect($caption, $name, $value),$required);
 		break;
 		case 'hidden':
 			$form->addElement(new XoopsFormHidden($name, $_REQUEST[$name]));
@@ -55,5 +55,3 @@ foreach ($fields as $name => $type) {
 $form->addElement(new XoopsFormButton('', 'submit', _SUBMIT, 'submit'));
 $form->display();
 
-
-?>

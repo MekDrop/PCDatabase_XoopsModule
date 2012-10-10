@@ -1,4 +1,4 @@
-<?
+<?php
 
 if (!isset($fields)) {
 	redirect_header(XOOPS_URL."/user.php", 3, _AD_NORIGHT);
@@ -121,6 +121,3 @@ if ($count < 1) {
 	}
 }
 echo "</table>";
-
-
-?>

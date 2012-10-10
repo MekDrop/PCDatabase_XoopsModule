@@ -26,5 +26,3 @@ $modversion['pages']=$modversion['sub'];
 
 // Database
 $modversion['sqlfile']['mysql'] = "sql/mysql.sql";
-
-?>

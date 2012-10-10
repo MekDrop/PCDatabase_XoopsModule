@@ -1,4 +1,4 @@
-<?
+<?php
 
 if (!isset($fields)) {
 	redirect_header(XOOPS_URL."/user.php", 3, _AD_NORIGHT);
@@ -41,5 +41,3 @@ if ($action == 'insert') {
 //	print nl2br($sql);
 //	die();
 }
-
-?>

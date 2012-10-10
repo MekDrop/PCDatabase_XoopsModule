@@ -61,7 +61,7 @@ if ($xoopsDB->getRowsNum($rez)>0) {
 	<tr>
 		<th colspan="4"><?=_MI_PCDB_COMPONENTS;?></th>
 	</tr>
-<?
+<?php
 while (list($kid, $id, $name, $group) = $xoopsDB->fetchRow($rez)) {
 	echo "<tr>";
 	echo "  <td class=\"even\" width=\"20%\">";
@@ -76,7 +76,7 @@ while (list($kid, $id, $name, $group) = $xoopsDB->fetchRow($rez)) {
 }
 ?>
 </table>
-<?}
+<?php }
 
 echo "<form method=\"post\" action=\"".XOOPS_URL."/modules/pcdb/$infix/index.php?op=$op&id=".$_REQUEST['id']."&opt=".$_REQUEST['opt']."\">";
 echo "<input name=\"action\" value=\"add\" type=\"hidden\">";

@@ -43,6 +43,3 @@ switch ($opt) {
 		include "-show.php";
 	break;
 }
-
-
-?>

@@ -1,25 +1,16 @@
 <?php
 
-include "../../../mainfile.php";
-if (!$xoopsUser) {
-    redirect_header(XOOPS_URL."/user.php", 3, _AD_NORIGHT);
-}
+include '../include/admin_common.php';
 
-include XOOPS_ROOT_PATH."/include/cp_functions.php";
-
-xoops_cp_header();
-
-include '../log.php';
+global $xoopsTpl;
 
 $op = $_REQUEST['op'];
 
-if (file_exists($op.'.php')) {
+if (file_exists($op.'.php')) {    
 	$infix = 'admin/';
+    xoops_cp_header();
 	include $op.'.php';
+    xoops_cp_footer();
 } else {
-	print 'Document can\'t be found.';
+	header('Location: index.php?op=software');
 }
-
-xoops_cp_footer();
-
-?>

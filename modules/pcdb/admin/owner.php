@@ -1,4 +1,4 @@
-<?
+<?php
 
 if (isset($_REQUEST['opt'])) {
 	$opt = $_REQUEST['opt'];
@@ -43,6 +43,3 @@ switch ($opt) {
 		include "-show.php";
 	break;
 }
-
-
-?>

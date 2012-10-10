@@ -32,5 +32,3 @@ $adminmenu[] = array('title' => _MI_PCDB_GROUPS, 'link' => "admin/index.php?op=g
 $adminmenu[] = array('title' => _MI_PCDB_OWNERS, 'link' => "admin/index.php?op=owner");
 $adminmenu[] = array('title' => _MI_PCDB_SUBOWNERS, 'link' => "admin/index.php?op=subowner");
 $adminmenu[] = array('title' => _MI_PCDB_LOG, 'link' => "admin/index.php?op=log");
-
-?>

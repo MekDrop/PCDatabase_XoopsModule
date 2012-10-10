@@ -1,6 +1,4 @@
 <?php
-// $Id: modinfo.php,v 1.9.22.4 2005/07/05 17:15:05 mithyt2 Exp $
-// Module Info
 
 // The name of this module
 define("_MI_PCDB_NAME","PC ir jo komponentų duomenų bazė");
@@ -84,4 +82,3 @@ define('_MI_PCDB_LOG_WHAT_SOFTWARE', 'programa');
 define('_MI_PCDB_LOG_WHAT_COMPONENT', 'kompiuterio komponentas');
 define('_MI_PCDB_LOG_WHAT_OWNER', 'seniunija');
 define('_MI_PCDB_LOG_WHAT_SUBOWNER', 'skyrius');
-?>
